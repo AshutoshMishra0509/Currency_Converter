@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Curreny Converter</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="half container1">
+      <div class="cur-btn fi">
+        <img class="first" src="https://flagsapi.com/US/shiny/64.png" />
+        <select name="Select a currency" id="cur1">
+          <!-- <option value="INR" selected>INR</option>
+        <option value="USD">USD</option>
+        <option value="EUR">EUR</option>
+        <option value="JPY">JPY</option> -->
+        </select>
+      </div>
+      <input type="number" placeholder=" Amount" required />
+      <button class="convert">Convert</button>
+    </div>
+
+    <div class="half container2">
+      <div class="cur-btn si">
+        <img class="second" src="https://flagsapi.com/US/shiny/64.png" />
+        <select name="Select a currency" id="cur2">
+          <!-- <option value="INR" selected>INR</option>
+        <option value="USD">USD</option>
+        <option value="EUR">EUR</option>
+        <option value="JPY">JPY</option> -->
+        </select>
+      </div>
+      <!-- <div id="currencyList">USD</div> -->
+      <div class="result">00</div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

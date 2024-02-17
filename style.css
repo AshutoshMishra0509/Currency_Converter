@@ -1,0 +1,209 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  width: 100vw;
+  min-height: 100vh;
+  overflow-y: auto;
+}
+.half {
+  width: 100%;
+  min-height: 50vh;
+}
+.container1 {
+  background-color: #d24545;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container1 input {
+  height: 10rem;
+  width: 70%;
+  text-align: center;
+  font-size: 7rem;
+  background: none;
+  border: none;
+  outline: none;
+  color: #f8f4ec;
+  appearance: textfield;
+  margin: 1rem;
+}
+input::placeholder {
+  color: #f8f4ec;
+}
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+.container2 {
+  background-color: #f8f4ec;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container2 .result {
+  height: 10rem;
+  width: auto;
+  padding: 1rem;
+  text-align: center;
+  font-size: 7rem;
+  background: none;
+  border: none;
+  outline: none;
+  color: #d24545;
+  margin: 1rem;
+  /* background-color: aqua; */
+}
+.convert {
+  /* left: 50%;
+  top: 50%; */
+  height: auto;
+  width: auto;
+  border-radius: 4px;
+  border: 1px solid #d24545;
+  z-index: 100;
+  /* transform: translate(-50%, -50%); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: medium;
+  color: #d24545;
+  font-weight: 900;
+  cursor: pointer;
+  background-color: #f8f4ec;
+  transition: background-color 0.3s ease;
+  outline: none !important;
+  /* margin: 2rem; */
+  padding: 2rem 3rem;
+}
+button:hover {
+  background-color: #e3ded4;
+}
+.cur-btn {
+  width: auto;
+  height: auto;
+  background-color: azure;
+  border-radius: 4px;
+  display: flex;
+  gap: 2rem;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 1rem 2rem;
+  margin: 1rem;
+}
+select {
+  height: auto;
+  border: none;
+  background-color: azure;
+  outline: none;
+}
+option {
+  font-size: 1.5rem;
+}
+.fi {
+  border: 2px solid #f8f4ec;
+  background: transparent;
+}
+#cur1 {
+  font-size: 3rem;
+  background: transparent;
+  color: #f8f4ec;
+}
+option {
+  background-color: black;
+}
+#cur2 {
+  font-size: 3rem;
+  background: transparent;
+  color: #d24545;
+}
+.si {
+  border: 2px solid #d24545;
+}
+img {
+  height: auto;
+  width: 4rem;
+}
+@media (max-width: 320px) {
+  html {
+    font-size: 30%;
+  }
+  .convert {
+    padding: 1rem;
+    /* height: 15rem;
+    width: 15rem; */
+    font-size: 2.5rem;
+  }
+  option {
+    height: auto;
+  }
+  .result {
+    width: 80%;
+  }
+}
+@media (min-width: 320px) and (max-width: 425px) {
+  html {
+    font-size: 35%;
+  }
+  .convert {
+    padding: 1rem;
+    /* height: 15rem;
+    width: 15rem; */
+    font-size: 2.5rem;
+  }
+  option {
+    height: auto;
+  }
+  .container2 .result {
+    width: 80%;
+    font-size: auto;
+  }
+  input,
+  input::placeholder {
+    font-size: 4rem;
+  }
+}
+@media (min-width: 425px) and (max-width: 768px) {
+  html {
+    font-size: 40%;
+  }
+  .convert {
+    padding: 1rem;
+    /* height: 15rem;
+    width: 15rem; */
+    font-size: 2.5rem;
+  }
+  option {
+    height: auto;
+  }
+  input {
+    font-size: 5rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  html {
+    font-size: 50%;
+  }
+  .convert {
+    padding: 1rem;
+    /* height: 15rem;
+    width: 15rem; */
+    font-size: 2.5rem;
+  }
+  option {
+    height: auto;
+  }
+  input {
+    font-size: 5rem;
+  }
+}
